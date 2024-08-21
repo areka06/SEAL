@@ -3,16 +3,29 @@
     padding: 0;
 }
 
-nav{
+nav {
+    z-index: 999;
+    top: 0px;
+    position: fixed;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 20px;
-    outline: 2px solid #F2F2F2;  
-    font-size: 16px;  
+    outline: 2px solid #F2F2F2;
+    font-size: 16px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: white; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.scrolled {
+    background-color: #0090FF; /* Background color when scrolled */
 }
 
 .logo{
@@ -51,6 +64,7 @@ nav{
 
 /* headline */
 .headlinecontainer{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,4 +140,38 @@ nav{
     display: flex;
     gap: 20px;
     color: #828282;
+}
+
+
+/* Berita Terpopuler */
+
+.beritaterpopulercontainer{
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beritaterpopulerhead{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.beritaterpopulerhead p{
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.beritaterpopulercontentcontainer{
+    display: flex;
+}
+.beritaterpopulercontent{
+    display: flex;
+}
+
+.beritaterpopulertext1{
+    width: 14rem;
 }
