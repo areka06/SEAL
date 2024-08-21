@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    outline: 2px solid #F2F2F2;  
+    font-size: 16px;  
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #111B26;
+    font-size: 20px;
+    font-weight: 600;
+}
+.logo img{
+    width: 3rem;
+    height: 3rem;
+    padding-right: 10px;
+}
+
+.horizontalmenu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontalmenu ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-right: 20px;
+    color: #526071;
+    font-family: "Inter", sans-serif;
+}
+
+.horizontalmenu ul li:hover{
+    color: #0090FF;
+}
+
+
+/* headline */
+.headlinecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline{
+    gap: 295px;
+    margin-top: 30px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headlinetext1{
+    width: 30rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #526071;
+    padding-bottom: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.headlinetext2{
+    width: 30rem;
+    margin-left: -1.5px;
+    display: flex;
+    justify-content:flex-start;
+    width: 30rem;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+    padding-bottom: 20px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.headlinetext3{
+    width: 30rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4F4F4F;
+    padding-bottom: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.headlineimg img{
+    border-radius: 20px;
+}
+
+.tanggal{
+    display: flex;
+}
+
+.tanggal img{
+    padding-right: 15px;
+}
+.tanggaltext{
+    color: #526071;
+    font-size: 14px;
+}
+
+.detail{
+    padding-top: 30px;
+    display:  flex;
+}
+
+.detail a{
+    padding-right: 15px;
+    text-decoration: none;  
+    color: #0090FF;
+}
+
+.pagination{
+    display: flex;
+    gap: 20px;
+    color: #828282;
+}
