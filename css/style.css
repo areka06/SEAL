@@ -21,7 +21,7 @@ nav {
     right: 0;
     box-sizing: border-box;
     background-color: white; /* Initial background color */
-    transition: background-color 0.5s ease-out; /* Smooth transition */
+    transition: background-color 0.5s ease-in-out; /* Smooth transition */
 }
 
 nav.scrolled {
@@ -29,13 +29,32 @@ nav.scrolled {
     background-color: #0090FF; /* Background color when scrolled */
 }
 
-.logo{
+nav.scrolled .logo img{
+    color: #FFFFFF;
+    filter: brightness(0) invert(1);
+}
+
+nav.scrolled .logo{
+    color: #FFFFFF;
+    filter: brightness(0) invert(1);
+}
+
+nav.scrolled .horizontalmenu ul li{
+    color: #F2F2F2;
+}
+
+nav.scrolled .horizontalmenu ul li:hover{
+    color: #FFFFFF;
+}
+
+.logo {
     display: flex;
     align-items: center;
     color: #111B26;
     font-size: 20px;
     font-weight: 600;
 }
+
 .logo img{
     width: 3rem;
     height: 3rem;
