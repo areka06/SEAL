@@ -21,10 +21,11 @@ nav {
     right: 0;
     box-sizing: border-box;
     background-color: white; /* Initial background color */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.5s ease-out; /* Smooth transition */
 }
 
-.scrolled {
+nav.scrolled {
+    outline: none;
     background-color: #0090FF; /* Background color when scrolled */
 }
 
