@@ -91,7 +91,7 @@ nav.scrolled .horizontalmenu ul li:hover{
 }
 
 .headline{
-    gap: 295px;
+    gap: 284px;
     margin-top: 30px;
     padding: 60px;
     display: flex;
@@ -187,7 +187,7 @@ nav.scrolled .horizontalmenu ul li:hover{
 
 .beritaterpopulercontentcontainer{
     display: flex;
-    gap: 60px;
+    gap: 56px;
 }
 .beritaterpopulercontent{
     display: flex;
@@ -230,7 +230,7 @@ nav.scrolled .horizontalmenu ul li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 600px;
+    gap: 583px;
 }
 
 /* input search */
