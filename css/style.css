@@ -167,11 +167,17 @@ nav {
 
 .beritaterpopulercontentcontainer{
     display: flex;
+    gap: 60px;
 }
 .beritaterpopulercontent{
     display: flex;
 }
 
+.beritaterpopulertext{
+    padding-left: 20px;
+}
+
 .beritaterpopulertext1{
     width: 14rem;
+    font-size: 16px;
 }
