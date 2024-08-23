@@ -10,7 +10,7 @@ function fetchNews() {
             return response.json();
         })
         .then(data => {
-            console.log(data); // Untuk memeriksa struktur data
+            console.log(data); 
             const container = document.getElementById('news-container');
             container.innerHTML = '';
             
