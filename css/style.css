@@ -316,10 +316,24 @@ nav.scrolled .horizontalmenu ul li:hover{
     padding-top: 44px;
     flex: 0 0 20%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
   }
   .rekomendasicontentcontainer{
     width: 1400px;
     display: flex;
     flex-wrap: wrap;
     gap: 92px;
+  }
+
+  .rekomendasitext{
+    padding-top: 10px;
+  }
+
+  .rekomendasitext1{
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    width: 16rem;
+    font-size: 18px;
   }
