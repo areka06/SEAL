@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Indonesia</title>
+    <!-- font1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- font2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style2.css" rel="stylesheet" />
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .news-item { margin-bottom: 20px; }
+        .news-item img { max-width: 100px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/Assets/logo.svg" alt="">
+            <p>Berita Kini</p>
+        </div>
+        <div class="horizontalmenu">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="terbaru.html">Terbaru</a></li>
+                <li><a href="hiburan.html">Hiburan</a></li>
+                <li><a href="gaya_hidup.html">Gaya Hidup</a></li>
+                <li><a href="olahraga.html">Olahraga</a></li>
+                <li><a href="nasional.html">Nasional</a></li>
+                <li><a href="internasional.html">Internasional</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="news-container">
+        <!-- News will be displayed here -->
+    </div>
+
+<script>
+    function fetchNews() {
+        const url = `https://api-berita-indonesia.vercel.app/cnn/terbaru`;
+        
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('news-container');
+                container.innerHTML = '';
+                
+                if (data.success && data.data && Array.isArray(data.data.posts)) {
+                    data.data.posts.forEach(item => {
+                        const newsItem = document.createElement('div');
+                        newsItem.className = 'news-item';
+                        newsItem.innerHTML = `
+                            <h2>${item.title || 'No Title'}</h2>
+                            <p>${item.description || 'No Description'}</p>
+                            <img src="${item.thumbnail || 'https://via.placeholder.com/100'}" alt="Thumbnail">
+                            <a href="${item.link || '#'}" target="_blank">Baca lebih lanjut</a>
+                        `;
+                        container.appendChild(newsItem);
+                    });
+                } else {
+                    container.innerHTML = '<p>No news available</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    }
+
+    window.onload = fetchNews;
+</script>
+
+</body>
+</html>
