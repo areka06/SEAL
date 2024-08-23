@@ -204,6 +204,19 @@ nav.scrolled .horizontalmenu ul li:hover{
     font-size: 16px;
 }
 
+.beritapopulertext1sec{
+    padding-top: 20px;
+    font-weight: 400;
+    color: #0090FF;
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    gap: 15px;
+}
+
+.kategori{
+    font-weight: 600;
+}
 /* rekomendasi untuk saya */
 
 .rekomendasihead{
@@ -297,4 +310,16 @@ nav.scrolled .horizontalmenu ul li:hover{
     background-color: rgb(255, 230, 230);
     transition-duration: 0.3s;
   }
-  
+
+  /* rekomendasicontent */
+  .rekomendasicontent{
+    padding-top: 44px;
+    flex: 0 0 20%;
+    box-sizing: border-box;
+  }
+  .rekomendasicontentcontainer{
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 92px;
+  }
