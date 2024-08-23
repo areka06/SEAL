@@ -388,3 +388,32 @@ nav.scrolled .horizontalmenu ul li:hover a{
     display: flex;
     justify-content: center;
   }
+
+  /* footer */
+  footer{
+    display: flex;
+    margin-top: 100px;
+    background-color: #2C3C4D;
+    width: 100%;
+    height: 449px;
+  }
+
+  .footerlogo{
+    padding-left: 80px;
+    padding-top: 80px; 
+  }
+
+  .footerlogo p{
+    color: #FFFFFF;
+    padding-top: 20px; 
+  }
+
+  .telusuri{
+    padding-left: 80px;
+    padding-top: 80px; 
+  }
+
+  .bantuan{
+    padding-left: 80px;
+    padding-top: 80px; 
+  }
